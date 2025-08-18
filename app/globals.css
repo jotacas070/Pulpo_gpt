@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette to reflect Chilean Navy theme */
+  --background: oklch(0.97 0.005 240); /* Light naval background */
+  --foreground: oklch(0.15 0.02 240); /* Navy blue text */
+  --card: oklch(1 0 0); /* Pure white cards */
+  --card-foreground: oklch(0.15 0.02 240); /* Navy blue on cards */
+  --popover: oklch(1 0 0); /* White popover */
+  --popover-foreground: oklch(0.15 0.02 240); /* Navy blue popover text */
+  --primary: oklch(0.15 0.02 240); /* Navy blue primary */
+  --primary-foreground: oklch(1 0 0); /* White on primary */
+  --secondary: oklch(0.75 0.15 60); /* Golden accent */
+  --secondary-foreground: oklch(1 0 0); /* White on secondary */
+  --muted: oklch(0.95 0.005 240); /* Muted naval background */
+  --muted-foreground: oklch(0.45 0.01 240); /* Muted navy text */
+  --accent: oklch(0.75 0.15 60); /* Golden accent */
+  --accent-foreground: oklch(1 0 0); /* White on accent */
+  --destructive: oklch(0.55 0.25 25); /* Red for errors */
+  --destructive-foreground: oklch(1 0 0); /* White on destructive */
+  --border: oklch(0.85 0.01 240); /* Light navy border */
+  --input: oklch(1 0 0); /* White input background */
+  --ring: oklch(0.15 0.02 240 / 0.3); /* Navy focus ring */
+  --chart-1: oklch(0.15 0.02 240);
+  --chart-2: oklch(0.75 0.15 60);
+  --chart-3: oklch(0.45 0.01 240);
+  --chart-4: oklch(0.65 0.05 240);
+  --chart-5: oklch(0.85 0.01 240);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.15 0.02 240); /* Navy sidebar */
+  --sidebar-foreground: oklch(1 0 0); /* White sidebar text */
+  --sidebar-primary: oklch(0.75 0.15 60); /* Golden sidebar primary */
+  --sidebar-primary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
+  --sidebar-accent: oklch(1 0 0); /* White sidebar accent */
+  --sidebar-accent-foreground: oklch(0.15 0.02 240); /* Navy on white */
+  --sidebar-border: oklch(0.25 0.02 240); /* Darker navy border */
+  --sidebar-ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
+}
+
+.dark {
+  /* Dark mode with navy theme */
+  --background: oklch(0.08 0.02 240); /* Dark navy background */
+  --foreground: oklch(0.95 0.005 240); /* Light text */
+  --card: oklch(0.12 0.02 240); /* Dark navy cards */
+  --card-foreground: oklch(0.95 0.005 240); /* Light card text */
+  --popover: oklch(0.12 0.02 240); /* Dark navy popover */
+  --popover-foreground: oklch(0.95 0.005 240); /* Light popover text */
+  --primary: oklch(0.95 0.005 240); /* Light primary in dark mode */
+  --primary-foreground: oklch(0.15 0.02 240); /* Navy on light */
+  --secondary: oklch(0.75 0.15 60); /* Golden remains same */
+  --secondary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
+  --muted: oklch(0.15 0.02 240); /* Muted navy */
+  --muted-foreground: oklch(0.65 0.01 240); /* Lighter muted text */
+  --accent: oklch(0.75 0.15 60); /* Golden accent */
+  --accent-foreground: oklch(0.15 0.02 240); /* Navy on golden */
+  --destructive: oklch(0.65 0.25 25); /* Lighter red for dark mode */
+  --destructive-foreground: oklch(0.95 0.005 240); /* Light on destructive */
+  --border: oklch(0.25 0.02 240); /* Dark navy border */
+  --input: oklch(0.15 0.02 240); /* Dark navy input */
+  --ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
+  --sidebar: oklch(0.05 0.02 240); /* Darker navy sidebar */
+  --sidebar-foreground: oklch(0.95 0.005 240); /* Light sidebar text */
+  --sidebar-primary: oklch(0.75 0.15 60); /* Golden sidebar primary */
+  --sidebar-primary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
+  --sidebar-accent: oklch(0.15 0.02 240); /* Navy sidebar accent */
+  --sidebar-accent-foreground: oklch(0.95 0.005 240); /* Light on navy */
+  --sidebar-border: oklch(0.25 0.02 240); /* Dark navy border */
+  --sidebar-ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
