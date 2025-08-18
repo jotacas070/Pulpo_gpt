@@ -4,71 +4,71 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color palette to reflect Chilean Navy theme */
-  --background: oklch(0.97 0.005 240); /* Light naval background */
-  --foreground: oklch(0.15 0.02 240); /* Navy blue text */
-  --card: oklch(1 0 0); /* Pure white cards */
-  --card-foreground: oklch(0.15 0.02 240); /* Navy blue on cards */
-  --popover: oklch(1 0 0); /* White popover */
-  --popover-foreground: oklch(0.15 0.02 240); /* Navy blue popover text */
-  --primary: oklch(0.15 0.02 240); /* Navy blue primary */
-  --primary-foreground: oklch(1 0 0); /* White on primary */
-  --secondary: oklch(0.75 0.15 60); /* Golden accent */
-  --secondary-foreground: oklch(1 0 0); /* White on secondary */
-  --muted: oklch(0.95 0.005 240); /* Muted naval background */
-  --muted-foreground: oklch(0.45 0.01 240); /* Muted navy text */
-  --accent: oklch(0.75 0.15 60); /* Golden accent */
-  --accent-foreground: oklch(1 0 0); /* White on accent */
-  --destructive: oklch(0.55 0.25 25); /* Red for errors */
-  --destructive-foreground: oklch(1 0 0); /* White on destructive */
-  --border: oklch(0.85 0.01 240); /* Light navy border */
-  --input: oklch(1 0 0); /* White input background */
-  --ring: oklch(0.15 0.02 240 / 0.3); /* Navy focus ring */
-  --chart-1: oklch(0.15 0.02 240);
-  --chart-2: oklch(0.75 0.15 60);
-  --chart-3: oklch(0.45 0.01 240);
-  --chart-4: oklch(0.65 0.05 240);
-  --chart-5: oklch(0.85 0.01 240);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.15 0.02 240); /* Navy sidebar */
-  --sidebar-foreground: oklch(1 0 0); /* White sidebar text */
-  --sidebar-primary: oklch(0.75 0.15 60); /* Golden sidebar primary */
-  --sidebar-primary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
-  --sidebar-accent: oklch(1 0 0); /* White sidebar accent */
-  --sidebar-accent-foreground: oklch(0.15 0.02 240); /* Navy on white */
-  --sidebar-border: oklch(0.25 0.02 240); /* Darker navy border */
-  --sidebar-ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
+  /* Updated color palette to reflect professional emerald color palette for government/military use */
+  --background: 255 255 255; /* Pure white background */
+  --foreground: 71 85 105; /* Slate-600 for main text */
+  --card: 241 245 249; /* Slate-100 for cards */
+  --card-foreground: 71 85 105; /* Slate-600 for card text */
+  --popover: 255 255 255; /* White popover */
+  --popover-foreground: 71 85 105; /* Slate-600 popover text */
+  --primary: 5 150 105; /* Emerald-600 for primary actions */
+  --primary-foreground: 255 255 255; /* White on primary */
+  --secondary: 16 185 129; /* Emerald-500 for secondary elements */
+  --secondary-foreground: 255 255 255; /* White on secondary */
+  --muted: 241 245 249; /* Slate-100 for muted backgrounds */
+  --muted-foreground: 100 116 139; /* Slate-500 for muted text */
+  --accent: 16 185 129; /* Emerald-500 for accents */
+  --accent-foreground: 255 255 255; /* White on accent */
+  --destructive: 190 18 60; /* Rose-700 for errors */
+  --destructive-foreground: 255 255 255; /* White on destructive */
+  --border: 229 231 235; /* Gray-200 for borders */
+  --input: 255 255 255; /* White input background */
+  --ring: 5 150 105; /* Emerald-600 for focus rings */
+  --chart-1: 5 150 105;
+  --chart-2: 16 185 129;
+  --chart-3: 71 85 105;
+  --chart-4: 156 163 175;
+  --chart-5: 229 231 235;
+  --radius: 0.5rem;
+  --sidebar: 241 245 249; /* Slate-100 sidebar */
+  --sidebar-foreground: 71 85 105; /* Slate-600 sidebar text */
+  --sidebar-primary: 5 150 105; /* Emerald-600 sidebar primary */
+  --sidebar-primary-foreground: 255 255 255; /* White on sidebar primary */
+  --sidebar-accent: 16 185 129; /* Emerald-500 sidebar accent */
+  --sidebar-accent-foreground: 255 255 255; /* White on sidebar accent */
+  --sidebar-border: 229 231 235; /* Gray-200 sidebar border */
+  --sidebar-ring: 5 150 105; /* Emerald-600 sidebar focus ring */
 }
 
 .dark {
-  /* Dark mode with navy theme */
-  --background: oklch(0.08 0.02 240); /* Dark navy background */
-  --foreground: oklch(0.95 0.005 240); /* Light text */
-  --card: oklch(0.12 0.02 240); /* Dark navy cards */
-  --card-foreground: oklch(0.95 0.005 240); /* Light card text */
-  --popover: oklch(0.12 0.02 240); /* Dark navy popover */
-  --popover-foreground: oklch(0.95 0.005 240); /* Light popover text */
-  --primary: oklch(0.95 0.005 240); /* Light primary in dark mode */
-  --primary-foreground: oklch(0.15 0.02 240); /* Navy on light */
-  --secondary: oklch(0.75 0.15 60); /* Golden remains same */
-  --secondary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
-  --muted: oklch(0.15 0.02 240); /* Muted navy */
-  --muted-foreground: oklch(0.65 0.01 240); /* Lighter muted text */
-  --accent: oklch(0.75 0.15 60); /* Golden accent */
-  --accent-foreground: oklch(0.15 0.02 240); /* Navy on golden */
-  --destructive: oklch(0.65 0.25 25); /* Lighter red for dark mode */
-  --destructive-foreground: oklch(0.95 0.005 240); /* Light on destructive */
-  --border: oklch(0.25 0.02 240); /* Dark navy border */
-  --input: oklch(0.15 0.02 240); /* Dark navy input */
-  --ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
-  --sidebar: oklch(0.05 0.02 240); /* Darker navy sidebar */
-  --sidebar-foreground: oklch(0.95 0.005 240); /* Light sidebar text */
-  --sidebar-primary: oklch(0.75 0.15 60); /* Golden sidebar primary */
-  --sidebar-primary-foreground: oklch(0.15 0.02 240); /* Navy on golden */
-  --sidebar-accent: oklch(0.15 0.02 240); /* Navy sidebar accent */
-  --sidebar-accent-foreground: oklch(0.95 0.005 240); /* Light on navy */
-  --sidebar-border: oklch(0.25 0.02 240); /* Dark navy border */
-  --sidebar-ring: oklch(0.75 0.15 60 / 0.3); /* Golden focus ring */
+  /* Dark mode with professional emerald theme */
+  --background: 15 23 42; /* Slate-900 dark background */
+  --foreground: 248 250 252; /* Slate-50 light text */
+  --card: 30 41 59; /* Slate-800 dark cards */
+  --card-foreground: 248 250 252; /* Slate-50 card text */
+  --popover: 30 41 59; /* Slate-800 dark popover */
+  --popover-foreground: 248 250 252; /* Slate-50 popover text */
+  --primary: 16 185 129; /* Emerald-500 primary in dark */
+  --primary-foreground: 15 23 42; /* Slate-900 on primary */
+  --secondary: 5 150 105; /* Emerald-600 secondary */
+  --secondary-foreground: 255 255 255; /* White on secondary */
+  --muted: 51 65 85; /* Slate-700 muted */
+  --muted-foreground: 148 163 184; /* Slate-400 muted text */
+  --accent: 16 185 129; /* Emerald-500 accent */
+  --accent-foreground: 15 23 42; /* Slate-900 on accent */
+  --destructive: 239 68 68; /* Red-500 for dark mode */
+  --destructive-foreground: 248 250 252; /* Slate-50 on destructive */
+  --border: 51 65 85; /* Slate-700 border */
+  --input: 30 41 59; /* Slate-800 input */
+  --ring: 16 185 129; /* Emerald-500 focus ring */
+  --sidebar: 15 23 42; /* Slate-900 sidebar */
+  --sidebar-foreground: 248 250 252; /* Slate-50 sidebar text */
+  --sidebar-primary: 16 185 129; /* Emerald-500 sidebar primary */
+  --sidebar-primary-foreground: 15 23 42; /* Slate-900 on sidebar primary */
+  --sidebar-accent: 30 41 59; /* Slate-800 sidebar accent */
+  --sidebar-accent-foreground: 248 250 252; /* Slate-50 on sidebar accent */
+  --sidebar-border: 51 65 85; /* Slate-700 sidebar border */
+  --sidebar-ring: 16 185 129; /* Emerald-500 sidebar focus ring */
 }
 
 @theme inline {
